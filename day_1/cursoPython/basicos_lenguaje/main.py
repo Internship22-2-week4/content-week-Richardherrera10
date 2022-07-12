@@ -41,7 +41,7 @@ def update_client(clientName, field, value):
     if client["name"] == clientName:
       print(f'index is {index}')
       print('both are the same')
-      clients[index][field] = clients[index][value]
+      clients[index][field] = value
       """ print(f'value is {clients[index][value]}') """
     else:
       continue
