@@ -35,20 +35,12 @@ def list_clients():
 
 def update_client(clientName, field, value):
   global clients
-  print(clients)
   for index, client in enumerate(clients):
-    print(f'each client is {client["name"]}')
     if client["name"] == clientName:
       print(f'index is {index}')
-      print('both are the same')
       clients[index][field] = value
-      """ print(f'value is {clients[index][value]}') """
     else:
       continue
-  print(f'new client {clients}')
-  print(clientName)
-  print([field])
-  print([value])
 
 """   if client_name in clients:
     index = clients.index(client_name)
