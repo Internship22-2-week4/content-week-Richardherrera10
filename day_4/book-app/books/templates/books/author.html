@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author-book title</title>
+</head>
+<body>
+  <h1>AUthor book</h1>
+  {% if author %}
+    <p> {{author.first_name}}</p>
+    <p> {{author.last_name}}</p>
+    <p> {{author.uri_image}}</p>
+    <p> {{author.author_status}}</p>
+  {% else %}
+    <p> no author</p>
+  {% endif %}
+  
+</body>
+</html>

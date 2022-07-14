@@ -44,8 +44,9 @@ def likes(number):
     else:
       allNums += (digit)
 
+# BMI
 def bmi(peso, altura):
-  indiceBMI = round(peso / altura**2,1)
+  indiceBMI = round((peso / altura**2),1)
   if indiceBMI < 18.5:
     return print('Bajo de Peso')
   elif indiceBMI > 18.5 and indiceBMI < 24.9:
@@ -55,6 +56,7 @@ def bmi(peso, altura):
   elif indiceBMI >= 30:
     return print('obeso')
 
+#POO
 class Obra:
   def __init__(self, idObra, tipo, autores, fecha, valor):
     self.idObra = idObra
@@ -91,13 +93,18 @@ class Exhibicion:
 if __name__ == '__main__':
   # contrasenaValida('')
   # calcularImpuestos(30, 500)
-  # likes(999)
-  # bmi(52, 1.75)
-  obraNew = Obra('MR1', 'Escultura', 'Mario Rodrigues', '11/15/1998', 500)
+  likes(120000)
+  # bmi(25, 1.60)
+
+
+
+
+
+  """ obraNew = Obra('MR1', 'Escultura', 'Mario Rodrigues', '11/15/1998', 500)
   portafolioN = Portafolio('PORT1', 'MR1', False, True)
   exhibicionN = Exhibicion('EXH1', '7/12/2022', 'Guatemala', 'Exhibicion del escultor Mario Rodrigues', 'PORT1' )
   print(obraNew.__dict__)
   print(portafolioN.__dict__)
   portafolioN.mostrarFotosVideos()
   print(exhibicionN.__dict__)
-  exhibicionN.mostrarDatosExhibicion()
+  exhibicionN.mostrarDatosExhibicion() """
